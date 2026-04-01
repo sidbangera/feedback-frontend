@@ -1,16 +1,21 @@
-# React + Vite
+# Anonymous Feedback Collector
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack web application that allows users to create secure, anonymous rooms to receive honest feedback from peers. Built as a demonstration of MERN-stack architecture.
 
-Currently, two official plugins are available:
+## 🚀 Tech Stack
+* **Frontend:** React.js, Vite, React Router
+* **Backend:** Node.js, Express.js
+* **Database:** MongoDB Atlas (Mongoose)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 💡 Features
+* **Instant Room Generation:** One-click creation of unique, random room IDs.
+* **Anonymous Submissions:** Users can submit feedback without logging in or revealing their identity.
+* **Real-time Dashboard:** Creators can view all feedback associated with their specific room ID.
+* **RESTful API:** Clean separation of concerns between the React client and Express server.
 
-## React Compiler
+## 🛠️ How to Run Locally
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Clone the backend repository and add your MongoDB URI to a `.env` file.
+2. Run `npm install` and `node server.js` to start the backend on port 5000.
+3. Clone this frontend repository.
+4. Run `npm install` and `npm run dev` to start the Vite server.
